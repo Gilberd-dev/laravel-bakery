@@ -1,0 +1,50 @@
+/* header  */
+
+  /* card */
+  .column {
+    padding: 50px 0 0 0;
+  }
+  /*  */
+  
+  .says {
+    font-family: "montserrat";
+  }
+  .comment{
+    font-family: 'montserrat';
+    text-align: justify;
+    text-indent: 0.6in;
+  }
+  .tag{
+    font-weight: bold;
+    text-align: left ;
+    font-family: 'montserrat';
+  }
+  /* Remove extra left and right margins, due to padding in columns */
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    background-color: #0f394c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    left: 15%;
+    background-color: #f1f1f1;
+    width: 75%;
+    border-radius: 100px;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 75%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
